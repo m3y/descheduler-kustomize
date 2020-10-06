@@ -1,0 +1,8 @@
+resources:
+  - github.com/kubernetes-sigs/descheduler/kubernetes/job?ref=master
+
+patches:
+  - target:
+      kind: ConfigMap
+      name: descheduler-policy-configmap
+    path: mystrategy.yaml
